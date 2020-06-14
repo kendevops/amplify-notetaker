@@ -1,1 +1,9 @@
-{}
+{
+	"auth": {
+		"amplifynotetaker3586622c": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
