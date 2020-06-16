@@ -1,12 +1,15 @@
 import React from "react";
-import { withAuthenticator } from "aws-amplify-react";
+import { AmplifyAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
 const App = () => {
   return (
-    <div>
-      <h1>APP</h1>
-    </div>
+    <AmplifyAuthenticator>
+      <div>
+        <h1>APP</h1>
+        <AmplifySignOut />
+      </div>
+    </AmplifyAuthenticator>
   );
 };
 
-export default withAuthenticator(App, { includeGreetings: true });
+export default App;
