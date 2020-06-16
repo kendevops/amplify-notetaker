@@ -3,14 +3,7 @@ import { AmplifyAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
 const App = () => {
   return (
-    <AmplifyAuthenticator
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "auto",
-      }}
-    >
+    <AmplifyAuthenticator>
       <div>
         <h1>APP</h1>
         <AmplifySignOut />
